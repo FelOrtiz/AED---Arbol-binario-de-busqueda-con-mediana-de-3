@@ -14,15 +14,13 @@ El ABB-M3 se direfencia del ABB principalmente porque en las hojas (nodos sin hi
 
 - Búsqueda: Los nodos internos permiten calcular hacia dónde debería estar la llave a buscar, luego si la llave esta en un nodo interno o en una hoja (comparando la llave a buscar con las llaves de la hoja) esta se considera una búsqueda exitosa, por otro lado, si en la bajada desde la raíz hasta la hoja no esta la llave, la búusqueda se considera infructuosa.
 
-#### Ejemplo
-
-  ###### Búsqueda exitosa   
+#### Búsqueda exitosa   
   
   <img src="http://i.imgur.com/IfTll5V.png">
 
   Como se puede apreciar, sólo nos costo 4 comparaciones de llave para saber que el número 6 se encuentra en nuestro árbol que contiene 23 elementos.
 
-  ###### Búsqueda infructuosa
+#### Búsqueda infructuosa
 
   <img src="http://i.imgur.com/YZzfp8O.png">
 
@@ -31,19 +29,19 @@ El ABB-M3 se direfencia del ABB principalmente porque en las hojas (nodos sin hi
 
 - Eliminación: Para eliminar debemos buscar la llave, luego si la llave está en una hoja, esta se elimina directamente. Si la llave esta en un nodo interno, se deben realizar algunos ajustes. Si hay a lo mas 3 llaves en la suma de los subárboles, estos se compactan formando una sola hoja y se conectan con el padre del nodo a eliminar. Luego, si hay mas de 3 llaves en la suma de los subárboles, se debe mover el menor de los mayores o el mayor de los menores al lugar de la llave borrada.
 
-  ###### Eliminación directa en una hoja
+#### Eliminación directa en una hoja
 
   <img src="http://i.imgur.com/3NGGOhc.png">
 
   Se puede ver que el núumero a eliminar se encuentra en una hoja, por ende, se elimna directamente.
 
-  ###### Eliminación de nodo interno con suma de llaves de subárboles menores o iguales a 3
+#### Eliminación de nodo interno con suma de llaves de subárboles menores o iguales a 3
   
   <img src="http://i.imgur.com/nAYbhWH.png">
 
   Acá eliminamos un nodo interno, y como es lógico no podemos dejar el nodo sin llave, por esta razón procedemos a comprobar si la suma de llaves de los subárboles es menor o igual a 3, lo compactamos en una sola hoja, después eliminamos el nodo interno vacío y jutamos el nodo padre con la nueva hoja.
 
-  ###### Eliminación de nodo interno con suma de llaves de subárboles mayores a 3
+#### Eliminación de nodo interno con suma de llaves de subárboles mayores a 3
 
   <img src="http://i.imgur.com/L5xBLGj.png">
 
