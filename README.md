@@ -1,10 +1,10 @@
-#Árbol binario de búsqueda con mediana de 3
+# Árbol binario de búsqueda con mediana de 3
 
-##Problema
+## Problema
 
 El ABB-M3 se direfencia del ABB principalmente porque en las hojas (nodos sin hijos) se pueden almacenar hasta 3 llaves, por ende, las operaciones basicas no son exactamente iguales al ABB normal. Las operaciones operan de la siguiente manera:
 
-###Insersión
+### Insersión
 
 La inserción sólo se puede realizar en las hojas. Si en la hoja hay espacio para una nueva llave, esta se almacena en orden. Si no existe espacio en la hoja, esta se divide y se forman 3 nuevos nodos: Nodo interno (que almacena la llave del medio), hoja izquierda (que almacena la llave menor) y hoja derecha (que almacena la llave mayor), luego se procede a insertar la llave entrante en la hoja correspondiente.
 
@@ -52,7 +52,7 @@ Para eliminar debemos buscar la llave, luego si la llave está en una hoja, esta
 
   Aquí eliminamos el un nodo interno, luego comprobamos si la suma de las llaves de los subárboles es menor o igual a 3, como no lo es, tenemos que buscar al mayor de los menores y reemplazarlo por el espacio que dejamos en el nodo interno.
 
-##Ejecución
+## Ejecución
 
 ```
 $ javac Tarea4.java
